@@ -176,7 +176,7 @@ class SpacyWordSplitter(WordSplitter):
     recommended ``WordSplitter``.
     """
     def __init__(self,
-                 language: str = 'en_core_web_sm',
+                 language: str = 'en_core_web_lg',
                  pos_tags: bool = False,
                  parse: bool = False,
                  ner: bool = False) -> None:
@@ -194,7 +194,7 @@ class SpacyWordSplitter(WordSplitter):
 
     @classmethod
     def from_params(cls, params: Params) -> 'WordSplitter':
-        language = params.pop('language', 'en_core_web_sm')
+        language = params.pop('language', 'en_core_web_lg')
         pos_tags = params.pop_bool('pos_tags', False)
         parse = params.pop_bool('parse', False)
         ner = params.pop_bool('ner', False)

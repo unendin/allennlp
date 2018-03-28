@@ -19,7 +19,7 @@ class CorefPredictor(Predictor):
 
         # We have to use spacy to tokenise our document here, because we need
         # to also know sentence boundaries to propose valid mentions.
-        self._spacy = get_spacy_model("en_core_web_sm", pos_tags=True, parse=True, ner=False)
+        self._spacy = get_spacy_model("en_core_web_lg", pos_tags=True, parse=True, ner=False)
 
     def predict(self, document: str) -> JsonDict:
         """

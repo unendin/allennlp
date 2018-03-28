@@ -27,7 +27,7 @@ pytorch and a spacy model, as described in [the installation tutorial](installat
 ```bash
 pip install -r requirements.txt
 pip install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
-python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_lg
 ```
 
 (The above is assuming CUDA 8 installed on a linux machine; use a different pytorch version as
