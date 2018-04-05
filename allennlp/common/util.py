@@ -237,6 +237,7 @@ def get_spacy_model(spacy_model_name: str, pos_tags: bool, parse: bool, ner: boo
     """
 
     options = (spacy_model_name, pos_tags, parse, ner)
+    logging.info(spacy_model_name)
     if options not in LOADED_SPACY_MODELS:
         disable = ['vectors', 'textcat']
         if not pos_tags:
